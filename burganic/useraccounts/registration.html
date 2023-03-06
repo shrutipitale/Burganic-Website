@@ -1,0 +1,114 @@
+<?php
+require_once('config.php');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>USER REGISTRATION</title>
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+<div>
+    <?php
+	   if(isset($_POST['create'])){
+		   $firstname=$_POST['firstname'];
+		   $lastname=$_POST['lastname'];
+		   $email=$_POST['email'];
+		   $phonenumber=$_POST['phonenumber'];
+		   $password=$_POST['password'];
+		   
+		   
+		   $sql = "INSERT INTO users(firstname,lastname,email,phonenumber,password) VALUES(?,?,?,?,?)";
+		   $stmtinsert = $db->prepare($sql);
+		   $result = $stmtinsert-> execute([$firstname, $lastname, $email, $phonenumber, $password]);
+		   if($result){
+			   echo 'SUCESSFULLY SAVED THE INFORMATION';
+		
+		   }else{
+			   echo 'ERROR FOUND TRY AGAIN';
+		   }
+		   
+	   }
+	?>
+
+<div>
+   <form action="registration.php" method="post">
+        <div class="container">
+		  <div class="row">
+		  <div class="col-sm-3">
+		<h1>REGISTRATION</h1>
+		<hr class="mb-3">
+		<label><b>FIRSTNAME</b></label>
+		<input class="form-control" type="text" id="firstname" name="firstname" required>
+		
+		<label><b>LASTNAME</b></label>
+		<input class="form-control" type="text" id="lastname" name="lastname" required>
+		
+		<label><b>EMAIL</b></label>
+		<input class="form-control" type="email" id="email" name="email" required>
+		
+		<label><b>PHONE NUMBER</b></label>
+		<input class="form-control" type="text" id="phonenumber" name="phonenumber" required>
+		
+		<label><b>PASSWORD</b></label>
+		<input class="form-control" type="password" id="password" name="password" required>
+		<hr class="mb-3">
+		<input class="btn btn-primary" type="submit" id="register" name="create" value="SIGN UP">
+		</div>
+		</div>
+		</div>
+   </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script type="text/javascript">
+$(function(){
+	$('#register').click(function(e){
+		
+		var valid = this.form.checkValidity();
+		
+	
+		if(valid){
+			
+		var firstname = $('$firstname').val();
+		var lastname = $('$lastname').val();
+		var email = $('$email').val();
+		var phonenumber = $('$phonenumber').val();
+		var password = $('$password').val();
+		
+		
+			e.preventDefault();
+			
+			$.ajax({
+				type: 'POST',
+				url: 'process.php',
+				data: {firstname:firstname,lastname:lastname,email:email,phonenumber:phonenumber,password:password},
+				success: function(data){
+					Swal.fire({
+		'title':'HELLO USER',
+		'text':'SUCESSFULLY REGISTERED',
+		'type':'success'
+     })
+				},
+				error: function(data){
+					Swal.fire({
+		'title':'ERROR',
+		'text':'TRY AGAIN',
+		'type':'error'
+     })
+				}
+			});
+			
+		}else{
+			
+		}
+		
+		
+	});
+	
+		
+	
+});
+</script>
+</body>
+</html>

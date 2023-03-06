@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+		
+		function Delete(e){
+			let items = [];
+			JSON.parse(localStorage.getItem('items')).map(data=>{
+				if(data.id != e.parentElement.parentElement.children[0].textContent){
+					
+				items.push(data);
+
+				}
+			
+				
+			});
+			localStorage.setItem('items',JSON.stringify(items));
+			window.location.reload();
+		};
+
+	 
+
+	</script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Burganic</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+    
+       <!---[indexjs]--->
+            <script src="C:\Users\user\Desktop\burganic\useraccounts\add to button\index.js"> </script>
+        <!----->
+   
+</head>
+
+<body>
+
+ 
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+	
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href="tel:+91 9765473274"> +91 9765473274</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            
+                            <li><a href="https://www.google.com/maps/place/Kings+Circle/@19.0327753,72.8539185,17"><i class="fas fa-location-arrow"></i> Our location</a></li>
+                            <li><a href="file:///C:/Users/user/Desktop/freshshop/contact-us.html"><i class="fas fa-headset"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Deserts
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Big Burganic (Veg/Non-Veg)
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 15%! on Happy Circle by Burganic (Veg/Non-Veg)
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> New!! Sweet N Salty Milkshake
+
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i>off 20%! The Spicy Veggie
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
+                            <ul class="dropdown-menu">
+								<li><a href="shop.html"> Shop</a></li>
+							    <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="feedback.html">feedback</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+
+                        <li class="side-menu">
+							<a href="#">
+							<div class="iconShopping"> <p>0</p>
+								<i class="fa fa-shopping-bag"></i>
+								</div>
+								<p>My Cart</p>
+							</a>
+						</li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+            <div class="side">
+                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <li class="cart-box">
+                    <ul class="cart-list">
+                             <li class="total">
+							 
+						    <table> </table>
+							 <div  class="totalpricecart">
+							   <div  class="subtotal">total </div>
+							    <div  class="priceview">
+							      <h2>00</h2>										  
+							    </div>  
+							 </div>
+							 <li class="total">
+                            <a href="checkout.html" class="btn btn-default hvr-hover btn-cart">CHECKOUT</a>
+                           
+						   </li>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Shop</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Shop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
+
+    <!-- Start Shop Page  -->
+    <div class="shop-box-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 col-lg-9 col-sm-12 col-xs-12 shop-content-right">
+                    <div class="right-product-box">
+                        <div class="product-item-filter row">
+                            <div class="col-12 col-sm-8 text-center text-sm-left">
+                                <div class="toolbar-sorter-right">
+                  					<span>Burganic Menu</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 text-center text-sm-right">
+                                <ul class="nav nav-tabs ml-auto">
+                                    <li>
+                                        <a class="nav-link active" href="#grid-view" data-toggle="tab"> <i class="fa fa-th"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="#list-view" data-toggle="tab"> <i class="fa fa-list"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="product-categorie-box">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">Sale</p>
+                                                    </div>
+                                                    <img src="images/veg-crispy-burger.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+
+                                                        </ul>
+														        <div class="item1">
+																	<h4 hidden>Crispy Veg Burger</h4>
+     
+																</div>
+																<p hidden>50</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Crispy Veg Burger</h4>
+                                                    <h5> ₹50</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                     <div class="type-lb">
+                                                        <p class="new">New</p>
+                                                    </div>
+                                                    <img src="images/sweet-n-salty milkshake.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+                                                            
+                                                        </ul>
+														<div class="item1">
+																	<h4 hidden>Sweet N Salty Milkshake</h4>
+     
+																</div>
+																<p hidden>70</p>
+														
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Sweet N Salty Milkshake</h4>
+                                                    <h5> ₹70</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                     <div class="type-lb">
+                                                        <p class="sale">Sale</p>
+                                                    </div>
+                                                    <img src="images/happy-circle by-burganic.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+
+                                                        </ul>
+														<div class="item1">
+																	<h4 >Happy Circle by Burganic (Veg/Non-Veg)</h4>
+                                  
+                                 </div>
+																<p hidden>350</p>
+														
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Happy Circle by Burganic<br>[Veg/Non-Veg]</h4>
+                                                    <h5> ₹350</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="new">New</p>
+                                                    </div>
+                                                    <img src="images/burger-pizza.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+                                                           
+                                                        </ul>
+														<div class="item1">
+																	<h4 hidden>Burger Pizza</h4>
+     
+																</div>
+																<p hidden>70</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Burger Pizza</h4>
+                                                    <h5> ₹70</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">Sale</p>
+                                                    </div>
+                                                    <img src="images/big-burganic.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+                                                            
+                                                        </ul>
+														
+														<div class="item1">
+						     
+                                <h4 hidden>Big Burganic <br>
+							      (Veg/Non-Veg)</br></h4>
+     
+                              </div>
+							   <p hidden>150</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Big Burganic [Veg/Non-Veg]</h4>
+                                                    <h5> ₹150</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                     <div class="type-lb">
+                                                        <p class="sale">Sale</p>
+                                                    </div>
+
+                                                    <img src="images/the-spicy-veggie.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+                                                           
+                                                        </ul>
+														<div class="item1">
+																	<h4 hidden>The spicy veggie <br>
+							                                         (Veg/Non-Veg)</br></h4>
+                              
+                                                                       </div>
+																<p hidden>115</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>The Spicy Veggie</h4>
+                                                    <h5> ₹115</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                      <div class="type-lb">
+                                                        <p class="sale">Sale</p>
+                                                    </div>
+
+                                                    <img src="images/paneer_wrap.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+                                                            
+                                                        </ul>
+														<div class="item1">
+																	<h4 hidden>Paneer Tikka Wrap</h4>
+     
+																</div>
+																<p hidden>95</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Paneer Tikka Wrap</h4>
+                                                    <h5> ₹95</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                     <div class="type-lb">
+                                                        <p class="sale">Sale</p>
+                                                    </div>
+
+                                                    <img src="images/veg-supreme.png" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+														
+                                                         </ul>
+														<div class="item1">
+																	<h4 >Happy Circle by Burganic (Veg/Non-Veg)</h4>
+                                  
+                                 </div>
+																<p hidden>150</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+												
+                                                <div class="why-text">
+                                                    <h4>Veggie Supreme[Veg/Non-Veg]</h4>
+                                                    <h5> ₹150</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="new">New</p>
+                                                    </div>
+                                                    <img src="images/doritos-tacos.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                        <ul>
+                                                            
+                                                        </ul>
+														<div class="item1">
+																	<h4 hidden>Doritos Tacos</h4>
+     
+														</div>
+																<p hidden>60</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Doritos Tacos</h4>
+                                                    <h5> ₹60</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								
+								
+                                <div role="tabpanel" class="tab-pane fade" id="list-view">
+                                    <div class="list-view-box">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                <div class="products-single fix">
+                                                    <div class="box-img-hover">
+                                                        
+                                                        <img src="images/veg-supreme.png" class="img-fluid" alt="Image">
+                                                       <div class="mask-icon">
+                                                        <ul>
+                                                            
+                                                        </ul>
+														<div class="item1">
+																	<h4 hidden>Veggie Supreme[Veg/Non-Veg]</h4>
+     
+														</div>
+																<p hidden>150</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                <div class="why-text full-width">
+                                                    <h4>Veggie Supreme[Veg/Non-Veg]</h4>
+                                                    <h5> <del>₹ 300</del> ₹150</h5>
+                                                    <p>A pizza that decidedly staggers under an overload of golden corn, exotic black olives, crunchy onions, crisp capsicum, succulent mushrooms, juicyfresh tomatoes and jalapeno - with extra cheese to go all around.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									
+                                    <div class="list-view-box">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                <div class="products-single fix">
+                                                    <div class="box-img-hover">
+                                                        
+                                                        <img src="images/paneer_wrap.jpg" class="img-fluid" alt="Image">
+                                                       <div class="mask-icon">
+                                                        <ul>
+                                                            
+                                                        </ul>
+														<div class="item1">
+																	<h4 hidden>Paneer Tikka Wrap</h4>
+     
+														</div>
+																<p hidden>95</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                <div class="why-text full-width">
+                                                    <h4>Paneer Tikka Wrap</h4>
+                                                    <h5> <del>₹ 120</del> ₹95</h5>
+                                                    <p>Tender paneer patty with a fiery, crunchy batter coating ; dresssed with fresh veggies and seasonings; topped with creamy sauce; and adash of mustard and melted cheese.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									
+                                    <div class="list-view-box">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                                <div class="products-single fix">
+                                                    <div class="box-img-hover">
+                                                        
+                                                        <img src="images/sweet-n-salty milkshake.jpg" class="img-fluid" alt="Image">
+                                                        <div class="mask-icon">
+                                                        <ul>
+                                                            
+                                                        </ul>
+														<div class="item1">
+																	<h4 hidden>Sweet N Salty Milkshake</h4>
+     
+														</div>
+																<p hidden>70</p>
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                                <div class="why-text full-width">
+                                                    <h4>Sweet N Salty Milkshake</h4>
+                                                    <h5> <del>₹ 90</del> ₹70</h5>
+                                                    <p>Homemade version of Black Tap’s “Sweet N’ Salty” Milkshake – peanut butter shake, chocolate frosted rim with chocolate gems & PB cups, topped with pretzel rods, chocolate covered pretzels, whipped cream & chocolate drizzle. </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								
+								
+								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-xl-3 col-lg-3 col-sm-12 col-xs-12 sidebar-shop-left">
+                    <div class="product-categori">
+                        <div class="filter-sidebar-left">
+                            <div class="title-left">
+							<br>
+                                <h3>Categories</h3>
+                            </div>
+                            <div class="list-group list-group-collapse list-group-sm list-group-tree" id="list-group-men" data-children=".sub-men">
+                                <div class="list-group-collapse sub-men">
+                                    <a class="list-group-item list-group-item-action" href="#sub-men1" data-toggle="collapse" aria-expanded="true" aria-controls="sub-men1">Burgers <small class="text-muted">(3)</small>
+								    </a>
+                                    <div class="collapse show" id="sub-men1" data-parent="#list-group-men">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">Crispy Veg Burger<small class="text-muted"> (available)</small></a>
+                                            <a href="#" class="list-group-item list-group-item-action">Burger Pizza<small class="text-muted"> (available)</small></a>
+                                            <a href="#" class="list-group-item list-group-item-action">Big Burganic[Veg/Non-Veg]<small class="text-muted">(available)</small></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+							
+                                <div class="list-group-collapse sub-men">
+                                    <a class="list-group-item list-group-item-action" href="#sub-men2" data-toggle="collapse" aria-expanded="false" aria-controls="sub-men2">Wraps
+								    <small class="text-muted">(2)</small>
+								    </a>
+                                    <div class="collapse" id="sub-men2" data-parent="#list-group-men">
+                                        <div class="list-group">
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action">Paneer Tikka Wrap <small class="text-muted"> (available)</small></a>
+											<a href="#" class="list-group-item list-group-item-action">The Spicy Veggie<small class="text-muted"> (available)</small></a>
+											
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="list-group-collapse sub-men">
+                                    <a class="list-group-item list-group-item-action" href="#sub-men3" data-toggle="collapse" aria-expanded="false" aria-controls="sub-men3">Tacos
+								    <small class="text-muted">(1)</small>
+								    </a>
+                                    <div class="collapse" id="sub-men3" data-parent="#list-group-men">
+                                        <div class="list-group">
+    										<a href="#" class="list-group-item list-group-item-action">Doritos Tacos<small class="text-muted"> (available)</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+			                    <div class="list-group-collapse sub-men">
+                                    <a class="list-group-item list-group-item-action" href="#sub-men4" data-toggle="collapse" aria-expanded="false" aria-controls="sub-men4">Pizzas
+								    <small class="text-muted">(2)</small>
+								    </a>
+                                    <div class="collapse" id="sub-men4" data-parent="#list-group-men">
+                                        <div class="list-group">
+    								
+                                            <a href="#" class="list-group-item list-group-item-action">Supreme Pizza[Veg/Non-Veg]<small class="text-muted">(available)</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="list-group-collapse sub-men">
+                                    <a class="list-group-item list-group-item-action" href="#sub-men5" data-toggle="collapse" aria-expanded="false" aria-controls="sub-men5">Combos & Sweets
+								    <small class="text-muted">(3)</small>
+								    </a>
+                                    <div class="collapse" id="sub-men5" data-parent="#list-group-men">
+                                        <div class="list-group">
+    										<a href="#" class="list-group-item list-group-item-action">Happy Circle by Burganic<small class="text-muted"> (available)</small></a>
+                                            <a href="#" class="list-group-item list-group-item-action">Sweet N Salty Milkshake<small class="text-muted"> (available)</small></a>
+                                            
+     
+										</div>
+                                    </div>
+                                </div>
+                             </div>    
+                           
+						   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Shop Page -->
+
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-04.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-06.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-07.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-08.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-09.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  -->
+
+<!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Time</h3>
+							<ul class="list-time">
+								<li>Monday - Friday: 08.00am to 12.00am</li> <li>Saturday: 10.00am to 11.00pm</li> <li>Sunday: <span>9:00am to 11:00pm</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Social Media</h3>
+							
+							<ul>
+                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+				<hr>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About Burganic</h4>
+                            <p>Improving quality of food.We are committed to nurturing a neutral platform and are helping food establishments  maintain high standards through Hyperpure.<br>
+							Food Hygiene Ratings is a coveted mark of quality among our restaurant partners.</p>
+                             <div class="testmonial_author">
+							 <h3>~By a customer</h3>		
+                              </div>							 
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="file:///C:/Users/user/Desktop/freshshop/about.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>"Burganic",Shop No:10,<br>Ground Floor,5th flora Avenue,Kings Circle,<br> Mumbai
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+91 9765473274">+91 9765473274</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactburganic@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+
+
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
